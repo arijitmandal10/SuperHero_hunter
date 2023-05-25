@@ -18,13 +18,3 @@
   * Character Page
     - Shows details about the carachter.
     - Has a heart icon, which can be used to add/remove the character to/from the favorites list.
-  
-## *Screenshots*
-  ***Home Page***
-  <img width="960" alt="image" src="https://user-images.githubusercontent.com/90390855/226729935-6aa34bf0-6a1b-4648-9e9b-ac03c7d074a8.png">
-
-  ***Favorites Page***
-  <img width="960" alt="image" src="https://user-images.githubusercontent.com/90390855/226730120-d9039b94-e4eb-40b5-b03d-102164f19cac.png">
-  
-  ***Character Page***
-  <img width="960" alt="image" src="https://user-images.githubusercontent.com/90390855/226731337-48ab7e2e-b4e6-4a0f-b35b-d1cd3fd43bc4.png">
