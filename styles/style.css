@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(51 49 49 / 98%);
+}
+::-webkit-scrollbar {
+	display: none;
+}
+:root {
+	--mainColor: whitesmoke;
+	--cardColor: rgba(255, 255, 255, 0.281);
+}
+
+/* navigation bar */
+.nav {
+	color: var(--mainColor);
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+	border-inline: 0px;
+	background-color: peru;
+}
+.heading {
+	text-decoration: none;
+	height: 2em;
+	color: inherit;
+	border: 2px dashed white;
+	display: flex;
+	align-items: center;
+	margin-block: 10px;
+	padding: 7px;
+}
+.left {
+	padding: 2%;
+	height: 10px;
+	z-index: 10;
+	width: 100px;
+}
+.right {
+	padding: 2%;
+	font-size: 1.5rem;
+	font-family: Candara;
+	font-weight: 600;
+}
+.middle {
+	font-size: 3rem;
+	font-family: serif;
+	font-weight: 900;
+	color: var(--mainColor);
+	display: flex;
+	justify-content: center;
+}
+
+/* search option */
+.search {
+	display: flex;
+	justify-content: center;
+}
+.searchbar {
+	width: 60vh;
+	height: 6.5vh;
+	border-radius: 25px;
+	border: none;
+	font-size: 16px;
+	padding: 20px;
+	box-shadow: 3px 6px 8px 2px black;
+	margin: 5vh 0px;
+}
+
+/* search result container */
+.container {
+	width: 90%;
+	margin: 3% 5%;
+	grid-template-columns: repeat(4, 200px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.card {
+	width: 32vh;
+	height: 45vh;
+	background-color: rgb(196 170 170 / 28%);
+	border: 1px solid #00000091;
+	margin-top: 50px;
+	margin-inline: 30px;
+	padding-top: 2vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: black 3px 3px 12px 5px;
+}
+.poster {
+	width: 30vh;
+	height: 28vh;
+	border: 2px solid rgb(0, 0, 0);
+	align-self: center;
+}
+.details {
+	display: flex;
+	justify-content: space-between;
+	color: rgb(255, 255, 255);
+	text-shadow: 6px 5px 8px black;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: Candara;
+}
+.heart-icon {
+	padding-top: 22px;
+	color: white;
+}
+.fa-solid {
+	color: red;
+}
+
+/* styles for hover */
+.glow:hover {
+	cursor: pointer;
+	text-shadow: #650000 3px 8px 6px;
+	transform: scale(1.05);
+}
+.glow {
+	text-shadow: 4px 5px 7px black;
+}
+.image:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.cardName:hover {
+	cursor: pointer;
+	text-decoration: underline 1px;
+	transform: scale(1.05);
+	/* color: black; */
+}
+.heart-icon:hover {
+	text-shadow: var(--mainColor) 0 0 10px;
+}
+.image {
+	width: 35vh;
+	height: 12vh;
+	/* margin-block: 30px; */
+}
+@media only screen and (max-width: 1000px) {
+	.heading {
+		display: none;
+	}
+	.image {
+		height: 9vh;
+		width: 15em;
+	}
+
+	.searchbar {
+		position: relative;
+		top: 39px;
+	}
+
+	.details {
+		font-size: 17px;
+	}
+
+	.card {
+		height: 38vh;
+	}
+}
+/* Styles here */

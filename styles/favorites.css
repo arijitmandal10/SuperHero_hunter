@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(51 49 49 / 98%);
+}
+::-webkit-scrollbar {
+	display: none;
+}
+:root {
+	--mainColor: whitesmoke;
+	--cardColor: rgba(255, 255, 255, 0.281);
+}
+.head {
+	margin: -20px;
+}
+
+/* navigation bar */
+.nav {
+	color: var(--mainColor);
+	display: flex;
+	justify-content: space-between;
+	background-color: peru;
+	height: 20vh;
+}
+.left {
+	padding: 2%;
+	height: 10px;
+	z-index: 10;
+	width: 100px;
+}
+.right {
+	padding: 2%;
+	font-size: 1.5rem;
+	font-family: Candara;
+	font-weight: 600;
+}
+.middle {
+	font-size: 3rem;
+	font-family: Ink Free;
+	font-weight: 900;
+	color: var(--mainColor);
+	display: flex;
+	justify-content: center;
+}
+
+/* search result container */
+#empty-fav {
+	font-size: 20px;
+	font-family: Candara;
+	color: var(--mainColor);
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 90%;
+	margin: 3% 5%;
+	grid-template-columns: repeat(4, 200px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.card {
+	width: 32vh;
+	height: 45vh;
+	background-color: rgb(196 170 170 / 28%);
+	border: 1px solid #00000091;
+	margin-top: 50px;
+	margin-inline: 30px;
+	padding-top: 2vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: black 3px 3px 12px 5px;
+}
+.poster {
+	width: 30vh;
+	height: 28vh;
+	border: 2px double rgb(0, 0, 0);
+	align-self: center;
+}
+.details {
+	display: flex;
+	justify-content: space-between;
+	color: rgb(255, 255, 255);
+	text-shadow: 6px 5px 8px black;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: Candara;
+}
+.heart-icon {
+	padding-top: 22px;
+	color: red;
+}
+
+/* styles for hover */
+.glow:hover {
+	cursor: pointer;
+	text-shadow: #650000 3px 8px 6px;
+	transform: scale(1.05);
+}
+.glow {
+	font-family: 'Font Awesome 6 Free';
+	text-shadow: 4px 5px 7px black;
+	border: 2px dashed white;
+	padding: 13px;
+}
+.image:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.image {
+	width: 35vh;
+	height: 12vh;
+	/* margin-block: 30px; */
+}
+.cardName:hover {
+	cursor: pointer;
+	text-decoration: underline 1px;
+	transform: scale(1.05);
+	/* color: black; */
+}
+.heart-icon:hover {
+	text-shadow: var(--mainColor) 0 0 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.head {
+		display: none;
+	}
+	.image {
+		height: 9vh;
+		width: 12em;
+		position: relative;
+		top: 10px;
+	}
+
+	.searchbar {
+		position: relative;
+		top: 39px;
+	}
+
+	.details {
+		font-size: 17px;
+	}
+
+	.card {
+		height: 38vh;
+	}
+
+	.nav {
+		height: 12vh;
+	}
+}
