@@ -18,3 +18,17 @@
   * Character Page
     - Shows details about the carachter.
     - Has a heart icon, which can be used to add/remove the character to/from the favorites list.
+
+
+## *Screenshots*
+
+ * Home Page
+![Screenshot (17)](https://github.com/arijitmandal10/SuperHero_hunter/assets/114182784/9c891938-8c9d-4bf3-a4f6-ed25b487477b)
+
+ * Favorites Page
+ ![Screenshot (19)](https://github.com/arijitmandal10/SuperHero_hunter/assets/114182784/45a6a40e-4a61-4d89-b6e9-319c7240cea5)
+ 
+  * Character Page
+  ![Screenshot (18)](https://github.com/arijitmandal10/SuperHero_hunter/assets/114182784/17550457-5c60-4df1-9493-e25b135f2a41)
+
+ 
